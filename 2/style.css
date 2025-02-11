@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .card-b {
+  padding: 1rem;
+  background: rgb(245, 214, 174);
+  position: relative;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  -webkit-mask: url("./bottom-right.png") center/contain no-repeat, linear-gradient(#000000 0 0);
+  -webkit-mask-size: 10rem;
+          mask-size: 10rem;
+  -webkit-mask-position: bottom right;
+          mask-position: bottom right;
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+.container .card-b .card {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.container .card-b .card .left {
+  width: 200px;
+  height: 100%;
+}
+.container .card-b .card .left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.container .card-b .card .right {
+  width: 250px;
+}
+.container .card-b .card .right .priceNrating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card-b .card .right .priceNrating .price {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.container .card-b .card .right .priceNrating .rating {
+  display: flex;
+  gap: 0.2rem;
+}
+.container .card-b .card .right .priceNrating .rating .star {
+  color: rgb(255, 215, 0);
+}
+.container .card-b .card .empty {
+  padding: 1rem;
+}
+.container .bbx {
+  background: #000;
+  position: relative;
+}
+.container .bbx button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.5rem 1rem;
+  background: rgb(255, 215, 0);
+  border: none;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
